@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MarkSimonsonProximaNovaBold';
+    src: url('fonts/MarkSimonsonProximaNovaBold.eot');
+    src: url('fonts/MarkSimonsonProximaNovaBold.eot') format('embedded-opentype'),
+         url('fonts/MarkSimonsonProximaNovaBold.woff2') format('woff2'),
+         url('fonts/MarkSimonsonProximaNovaBold.woff') format('woff'),
+         url('fonts/MarkSimonsonProximaNovaBold.ttf') format('truetype'),
+         url('fonts/MarkSimonsonProximaNovaBold.svg#MarkSimonsonProximaNovaBold') format('svg');
+}

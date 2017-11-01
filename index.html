@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="js csstransitions" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eugene Simpson | UI/UX Designer</title>
+  <meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
+  <meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+  <meta name="Eugene" content="Codrops" />
+  <link rel="shortcut icon" href="favicon_2.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/icons.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style-adsila.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="pages-nav cf">
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-home')">Home</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-about')">About Me</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-projects')">Projects</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-interests')">My Interests</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-contact')">Say Hello</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="" ng-click="openPage('page-belief')">My Belief's</a></div>
+
+    <div class="pages-nav__item pages-nav__item--social scl-nav">
+      <a class="link link--social link--faded" target="blank" href="https://twitter.com/eugenesimpson16"><i class="fa fa-twitter twit"></i><span class="text-hidden">Twitter</span></a>
+      <a class="link link--social link--faded" target="blank" href="https://www.linkedin.com/in/eugene-simpson-58b32867"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+      <a class="link link--social link--faded" target="blank" href="https://www.facebook.com/eugene.simpson.543"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+      <a class="link link--social link--faded" target="blank" href="https://www.behance.net/Eugene_simpson"><i class="fa fa-behance"></i><span class="text-hidden">Behance</span></a>
+      <a class="link link--social link--faded" target="blank" href="https://www.instagram.com/eugenesimpson16/?hl=en"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+    </div>
+  </nav>
+  <!-- /navigation-->
+  <div class="pages-stack">
+    <div class="page" id="page-home" ng-controller="HomeController" my-directive template-path="partials/home.html" on-load-callback="description()"></div>
+
+    <div class="page" id="page-about" ng-controller="AboutController" ng-click="menuOpenPage(event, 'page-about')" my-directive template-path="partials/about.html"></div>
+
+    <div class="page" id="page-projects" ng-controller="ProjectController" ng-click="menuOpenPage(event, 'page-projects')" my-directive template-path="partials/projects.html"></div>
+
+    <div class="page" id="page-contact" ng-click="menuOpenPage(event, 'page-contact')" my-directive template-path="partials/contact.html"></div>
+
+    <div class="page" id="page-interests" ng-click="menuOpenPage(event, 'page-interests')" my-directive template-path="partials/interests.html"></div>
+
+    <div class="page" id="page-belief" ng-click="menuOpenPage(event, 'page-training')" my-directive template-path="partials/belief.html"></div>
+  </div>
+
+  <button class="menu-button" ng-click="toggleMenu()"><span>Menu</span></button>
+
+
+
+  <!-- JS Links -->
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="lib/angular/angular-animate.min.js"></script>
+  <script src="lib/modernizr-custom.js"></script>
+  <script src="lib/dynamics.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+
+</body>
+
+
+</html>
